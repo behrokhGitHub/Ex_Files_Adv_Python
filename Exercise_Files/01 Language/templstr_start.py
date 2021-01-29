@@ -1,5 +1,6 @@
 # demonstrate template string functions
 
+from string import Template
 
 def main():
     # Usual string formatting with format()
@@ -7,11 +8,20 @@ def main():
     print(str1)
     
     # TODO: create a template with placeholders
+    temp = Template("You're watching ${title} by ${name}")
     
     # TODO: use the substitute method with keyword arguments
+    str2 = temp.substitute(title="Advanced Python", name="Joe Marini")
+    print(str2)
     
     # TODO: use the substitute method with a dictionary
-
+    data ={
+        
+        "title":"Advanced Python", 
+        "name":"Joe Marini"
+    }
+    str3 = temp.substitute(data)
+    print(str3)
     
 if __name__ == "__main__":
     main()
