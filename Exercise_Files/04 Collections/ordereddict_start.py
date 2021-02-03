@@ -31,10 +31,13 @@ def main():
     b = OrderedDict({'a': 1, 'b':2, 'c':3})
     print("a is equal to b? ", a==b)
     
+    # OrderedDict is order sensetive
     aa = OrderedDict({'a': 1, 'b':2, 'c':3})
     bb = OrderedDict({'a': 1, 'c':3, 'b':2})
     print("a is equal to b? ", aa==bb)
     
+    # comparing a regular dict with an Ordered one; order won't matter here
+    # returns True
     aaa = OrderedDict({'a': 1, 'b':2, 'c':3})
     bbb = {'a': 1, 'c':3, 'b':2}
     print("a is equal to b? ", aaa==bbb)
