@@ -24,6 +24,7 @@ def main():
     d.appendleft(1)
     print(d)
     print()
+    
     # TODO: rotate the deque
     d.rotate(10)
     print(d)
