@@ -8,8 +8,14 @@ class Person():
         self.age = 25
 
     # TODO: use __repr__ to create a string useful for debugging
+    def __repr__(self):
+        return "<Person fname:{}, lname:{}, age:{}>".format(
+            self.fname, self.lname, self.age)
 
     # TODO: use str for a more human-readable string
+    def __str__(self):
+        return "Person ({}, {}, {})".format(
+            self.fname, self.lname, self.age)
 
 
 def main():
