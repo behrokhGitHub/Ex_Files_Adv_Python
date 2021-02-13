@@ -30,6 +30,7 @@ def main():
     print(Fruit.PEAR.value)
     
     # TODO: enums are hashable - can be used as keys
+    # output Andrew Ng Class
     myFruit = {}
     myFruit[Fruit.APPLE] = "Andrew Ng Class"
     print(myFruit[Fruit.APPLE])
