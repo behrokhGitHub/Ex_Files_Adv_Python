@@ -11,15 +11,17 @@ class Point():
 
     # TODO: implement addition
     def __add__(self, other):
-        pass
+        return (self.x+other.x, self.y+other.y)
 
     # TODO: implement subtraction
     def __sub__(self, other):
-        pass
+        return (self.x-other.x, self.y-other.y)
 
     # TODO: implement in-place addition
     def __iadd__(self, other):
-        pass
+        self.x = self.x + other.x
+        self.y = self.y + other.y
+        return self.x, self.y
 
 
 def main():
@@ -29,11 +31,16 @@ def main():
     print(p1, p2)
 
     # TODO: Add two points
-
+    p3 = p1 + p2
+    print(p3)
+    
     # TODO: subtract two points
-
+    p3 = p1 - p2
+    print(p3)
+    
     # TODO: Perform in-place addition
-
+    p1 += p2
+    print(p1)
 
 if __name__ == "__main__":
     main()
